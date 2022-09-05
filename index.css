@@ -275,11 +275,12 @@ Add the correct display in Chrome and Safari.
   --fourth-color: #fff;
 }
 
-summary {
+/* Internal CSS */
+
+/* summary {
   display: list-item;
 }
 
-/* Internal CSS */
 
 body {
   font-family: "poppins", Arial, Helvetica, sans-serif;
@@ -395,4 +396,75 @@ body {
 
 .status .status-name{
   color: var(--first-color);
+} */
+
+.navbar {
+  max-width: 640px;
+  background-color: rgba(210, 210, 200, 0.7);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  padding: 0 2rem;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 14rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  transform: translateX(14rem);
+  transition: all 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mobile-menu a {
+  color: var(--fourth-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.menu,
+.right-navbar {
+  display: none;
+}
+
+.mobile-navbar {
+  z-index: 5;
+}
+
+.menu-icon {
+  width: 2rem;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 40px;
+}
+
+.menu-icon.active:first-child {
+  transform: rotate(45deg) translate(1px, 10px);
+  background-color: var(--fourth-color);
+}
+
+.menu-icon.active:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active:last-child {
+  transform: rotate(-45deg) translate(1px, -10px);
+  background-color: var(--fourth-color);
 }
