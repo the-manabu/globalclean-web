@@ -277,14 +277,15 @@ Add the correct display in Chrome and Safari.
 
 /* Internal CSS */
 
+body {
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
 /* summary {
   display: list-item;
 }
 
 
-body {
-  font-family: "poppins", Arial, Helvetica, sans-serif;
-}
 
 .navbar {
   width: 100%;
@@ -398,6 +399,12 @@ body {
   color: var(--first-color);
 } */
 
+main {
+  margin-top: 67px;
+  color: var(--fourth-color);
+  max-width: 640px;
+}
+
 .navbar {
   max-width: 640px;
   background-color: rgba(210, 210, 200, 0.7);
@@ -409,6 +416,10 @@ body {
   left: 0;
   right: 0;
   top: 0;
+}
+
+.text-logo {
+  font-weight: 400;
 }
 
 .mobile-menu {
@@ -427,10 +438,68 @@ body {
   gap: 2rem;
 }
 
+.hero {
+  background-image: url(/assets/hero-picture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 10px;
+  text-align: center;
+}
+
+.location-input {
+  max-width: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--fourth-color);
+  margin: 0 auto;
+  padding: 4px 1px;
+  border-radius: 12px;
+  gap: 2px;
+  margin-bottom: 5rem;
+}
+
+.status {
+  display: flex;
+  margin: 0 auto;
+  max-width: 350px;
+  justify-content: center;
+  align-items: center;
+}
+
 .mobile-menu a {
   color: var(--fourth-color);
   text-decoration: none;
   font-size: 1.2rem;
+}
+
+.hero-description h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 5rem;
+}
+
+.hero-description p {
+  padding: 0 20px;
+  margin-bottom: 3rem;
+}
+
+.location-input input {
+  max-width: 200px;
+  border: none;
+  outline: none;
+  color: var(--first-color);
+  font-size: 12px;
+}
+
+.location-input button {
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--second-color);
+  color: var(--fourth-color);
+  padding: 5px 8px;
 }
 
 .mobile-menu.active {
@@ -455,6 +524,22 @@ body {
   border-radius: 40px;
 }
 
+.countries,
+.outlets,
+.customers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.status .status-number {
+  font-size: 24px;
+}
+
+.status .status-name {
+  font-size: 14px;
+}
+
 .menu-icon.active:first-child {
   transform: rotate(45deg) translate(1px, 10px);
   background-color: var(--fourth-color);
@@ -467,4 +552,8 @@ body {
 .menu-icon.active:last-child {
   transform: rotate(-45deg) translate(1px, -10px);
   background-color: var(--fourth-color);
+}
+
+.hero-image {
+  display: none;
 }
