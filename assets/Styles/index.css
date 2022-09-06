@@ -1,0 +1,531 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+  margin: 0; /* 1 */
+  font-family: system-ui, -apple-system,
+    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+:root {
+  --first-color: #666;
+  --second-color: #3ca19d;
+  --third-color: #eee;
+  --fourth-color: #fff;
+}
+
+summary {
+  display: list-item;
+}
+
+/* Internal CSS */
+
+body {
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+}
+
+.left-navbar {
+  display: flex;
+  gap: 10px;
+}
+
+.left-navbar .menu {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--third-color);
+}
+
+.hero {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-input {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid var(--third-color);
+  justify-content: space-between;
+  padding: 1rem;
+  max-width: 31rem;
+  border-radius: 20px;
+}
+
+.left-navbar .text-logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.left-navbar .menu a {
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+.right-navbar .signup-button {
+  background-color: rgba(220, 220, 220, 0.25);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.hero .hero-description {
+  flex-basis: 1;
+  padding-left: 70px;
+  padding-right: 40px;
+}
+
+.hero-description h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.hero-description span {
+  color: var(--second-color);
+}
+
+.hero-description p {
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+
+.location-input input {
+  outline: none;
+  border: none;
+  font-size: 14px;
+  color: var(--first-color);
+}
+
+.location-input button {
+  border: none;
+  padding: 6px 15px;
+  border-radius: 10px;
+  background-color: var(--second-color);
+  color: var(--fourth-color);
+  cursor: pointer;
+}
+
+.hero-description .status {
+  display: flex;
+  margin-top: 48px;
+  gap: 50px;
+}
+
+.status .status-number {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.status .status-name {
+  color: var(--first-color);
+}
+
+/* section 1 */
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  align-content: center;
+  align-items: center;
+}
+
+.heading-section-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.heading-section-1 h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+
+  color: var(--first-color);
+}
+
+.heading-section-1 p {
+  width: 410px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  text-align: center;
+
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  gap: 40px;
+  padding: 0 120px;
+}
+
+.cards .card {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 16px;
+  gap: 8px;
+
+  background: #ffffff;
+  border: 1px solid #d0d6e2;
+  box-shadow: 0px 8px 15px rgba(88, 119, 182, 0.09);
+  border-radius: 16px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0;
+  align-items: center;
+}
+
+.card-content img {
+  width: 68px;
+  height: 68px;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-description h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  /* identical to box height, or 100% */
+
+  color: #333333;
+}
+
+.card-description p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  text-align: center;
+
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.card-content a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  color: #333333;
+  padding: 16px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+
+  background: #ffffff;
+  border: 1px solid #d0d6e2;
+  border-radius: 8px;
+}
+
+.card:hover {
+  background: #ffffff;
+  border: 1px solid #d0d6e2;
+  box-shadow: 0px 8px 31px rgba(88, 119, 182, 0.29);
+  border-radius: 16px;
+}
