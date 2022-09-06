@@ -441,7 +441,7 @@ main {
 }
 
 .hero {
-  background-image: url(/assets/hero-picture.jpg);
+  background-image: url(/assets/images/hero-picture.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 10px;
