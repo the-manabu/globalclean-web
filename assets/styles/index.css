@@ -274,10 +274,11 @@ Add the correct display in Chrome and Safari.
   --second-color: #3ca19d;
   --third-color: #eee;
   --fourth-color: #fff;
+  --default-font: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "poppins";
+  font-family: var(--default-font);
   color: var(--first-color);
 }
 
@@ -578,7 +579,7 @@ a {
   }
 
   .heading-section h2 {
-    font-family: "Poppins";
+    font-family: var(--default-font);
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -591,7 +592,7 @@ a {
   .heading-section p {
     width: 410px;
 
-    font-family: "Poppins";
+    font-family: var(--default-font);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -643,7 +644,7 @@ a {
   }
 
   .card-description h3 {
-    font-family: "Poppins";
+    font-family: var(--default-font);
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -655,7 +656,7 @@ a {
   }
 
   .card-description p {
-    font-family: "Poppins";
+    font-family: var(--default-font);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -668,7 +669,7 @@ a {
   }
 
   .card-content a {
-    font-family: "Poppins";
+    font-family: var(--default-font);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
