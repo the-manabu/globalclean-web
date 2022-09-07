@@ -519,10 +519,6 @@ a {
     display: block;
   }
 
-  .text-logo {
-    font-size: 2rem;
-  }
-
   .navbar {
     min-width: 720px;
     /* background-color: rgba(0, 0, 0, 0); */

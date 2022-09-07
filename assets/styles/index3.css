@@ -1,0 +1,132 @@
+/* summary {
+  display: list-item;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+}
+
+.left-navbar {
+  display: flex;
+  gap: 10px;
+}
+
+.left-navbar .menu {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--third-color);
+}
+
+.hero {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-input {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid var(--third-color);
+  justify-content: space-between;
+  padding: 1rem;
+  max-width: 31rem;
+  border-radius: 20px;
+}
+
+.left-navbar .text-logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.left-navbar .menu a {
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+.right-navbar .signup-button {
+  background-color: rgba(220, 220, 220, 0.25);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.hero .hero-description {
+  flex-basis: 1;
+  padding-left: 70px;
+  padding-right: 40px;
+}
+
+.hero-description h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.hero-description span {
+  color: var(--second-color);
+}
+
+.hero-description p {
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+
+.location-input input {
+  outline: none;
+  border: none;
+  font-size: 14px;
+  color: var(--first-color);
+}
+
+.location-input button {
+  border: none;
+  padding: 6px 15px;
+  border-radius: 10px;
+  background-color: var(--second-color);
+  color: var(--fourth-color);
+  cursor: pointer;
+}
+
+.hero-description .status {
+  display: flex;
+  margin-top: 48px;
+  gap: 50px;
+}
+
+.status .status-number {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.status .status-name {
+  color: var(--first-color);
+} */
+
+/*
+ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+} */
+
+
+
+/* <<<<<<< Updated upstream:assets/Styles/index.css */
+/* section 1 */
+
+/* ======= */
