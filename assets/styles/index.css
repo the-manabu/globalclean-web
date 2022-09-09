@@ -283,7 +283,7 @@ body {
 }
 
 main {
-  max-width: 900px;
+  max-width: 1400px;
 }
 
 a {
@@ -301,6 +301,8 @@ a {
   left: 0;
   right: 0;
   top: 0;
+  z-index: 1;
+  max-width: 100%;
 }
 
 .text-logo {
@@ -442,7 +444,7 @@ a {
 }
 
 .services-section {
-  max-width: 900px;
+  max-width: 100%;
 }
 
 .heading-section {
@@ -464,6 +466,7 @@ a {
 .cards {
   max-width: 900px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .card {
@@ -563,134 +566,96 @@ a {
   }
 }
 
-@media screen and (min-width: 900px) {
-  .services-section {
-    display: flex;
-    flex-direction: column;
-    margin-top: 150px;
-    align-content: center;
-    align-items: center;
+@media screen and (min-width: 1024px) {
+  .navbar {
+    background-color: transparent;
+    padding: 20px 100px;
   }
 
-  .heading-section {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  main {
+    margin: 0 auto;
   }
 
-  .heading-section h2 {
-    font-family: var(--default-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 60px;
-    text-align: center;
-
+  .hero {
+    background-image: none;
     color: var(--first-color);
+    display: flex;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 8rem;
   }
 
-  .heading-section p {
-    width: 410px;
+  .hero-description {
+    text-align: start;
+    padding: 0 200px 0 100px;
+    padding-top: 10rem;
+  }
 
-    font-family: var(--default-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    /* or 162% */
+  .hero-description h1 {
+    text-align: start;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-size: 40px;
+  }
 
-    text-align: center;
+  .hero-description h1 span {
+    color: var(--second-color);
+  }
 
-    color: rgba(51, 51, 51, 0.7);
+  .hero-description p {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+
+  .location-input {
+    border: 1px solid #eee;
+    max-width: 450px;
+    align-items: stretch;
+    padding: 4px 5px;
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+
+  .location-input img {
+    height: 24px;
+    margin: 10px 0;
+  }
+
+  .location-input input {
+    min-width: 300px;
+  }
+
+  .location-input button {
+    padding: 5px 25px;
+    font-weight: 600;
+  }
+
+  .status {
+    margin: 0;
+    justify-content: start;
+    gap: 35px;
+  }
+
+  .status .status-number {
+    font-size: 30px;
+  }
+
+  .hero .hero-image {
+    flex-basis: content;
+    display: block;
+    height: 100%;
   }
 
   .cards {
-    display: flex;
-    flex-direction: row;
-    margin-top: 70px;
-    gap: 40px;
-    padding: 0 120px;
+    max-width: 1400px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 100px;
   }
 
-  .cards .card {
-    display: flex;
-    align-items: flex-start;
-    padding: 20px 16px;
-    gap: 8px;
-
-    background: #ffffff;
-    border: 1px solid #d0d6e2;
-    box-shadow: 0px 8px 15px rgba(88, 119, 182, 0.09);
-    border-radius: 16px;
-  }
-
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding: 0;
-    align-items: center;
-  }
-
-  .card-content img {
-    width: 68px;
-    height: 68px;
-  }
-
-  .card-description {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .card-description h3 {
-    font-family: var(--default-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
-    text-align: center;
-    /* identical to box height, or 100% */
-
-    color: #333333;
-  }
-
-  .card-description p {
-    font-family: var(--default-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    /* or 162% */
-
-    text-align: center;
-
-    color: rgba(51, 51, 51, 0.7);
-  }
-
-  .card-content a {
-    font-family: var(--default-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    /* identical to box height, or 100% */
-
-    color: #333333;
-    padding: 16px;
-    text-decoration: none;
-    width: 100%;
-    text-align: center;
-
-    background: #ffffff;
-    border: 1px solid #d0d6e2;
-    border-radius: 8px;
-  }
-
-  .card:hover {
-    background: #ffffff;
-    border: 1px solid #d0d6e2;
-    box-shadow: 0px 8px 31px rgba(88, 119, 182, 0.29);
-    border-radius: 16px;
+  .card {
+    justify-content: space-between;
   }
 }
