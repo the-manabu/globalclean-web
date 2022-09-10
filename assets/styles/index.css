@@ -278,6 +278,10 @@ Add the correct display in Chrome and Safari.
   --default-font: "Poppins", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--default-font);
   color: var(--first-color);
