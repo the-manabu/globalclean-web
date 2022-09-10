@@ -587,6 +587,7 @@ a {
   .navbar {
     background-color: transparent;
     padding: 20px 100px;
+    transition: all .4s ease-in-out;
   }
 
   main {
