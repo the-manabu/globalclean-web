@@ -274,7 +274,12 @@ Add the correct display in Chrome and Safari.
   --second-color: #3ca19d;
   --third-color: #eee;
   --fourth-color: #fff;
+  --fifth-color: #c4c4c4;
   --default-font: "Poppins", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body {
@@ -292,7 +297,6 @@ a {
 }
 
 .navbar {
-  background-color: rgba(210, 210, 200, 0.7);
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -445,6 +449,7 @@ a {
 
 .services-section {
   max-width: 100%;
+  margin-bottom: 7rem;
 }
 
 .heading-section {
@@ -505,6 +510,17 @@ a {
   margin-bottom: 35px;
 }
 
+.benefit-card {
+  display: none;
+}
+
+.benefit-description {
+  padding: 20px;
+  line-height: 30px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 720px) {
   main {
     margin-top: 0;
@@ -525,7 +541,6 @@ a {
 
   .navbar {
     min-width: 720px;
-    /* background-color: rgba(0, 0, 0, 0); */
   }
 
   .left-navbar {
@@ -563,6 +578,10 @@ a {
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .benefit-description {
+    max-width: 550px;
   }
 }
 
@@ -647,8 +666,8 @@ a {
 
 @media screen and (min-width: 1024px) {
   .navbar {
-    background-color: transparent;
     padding: 20px 100px;
+    transition: all 0.4s ease-in-out;
   }
 
   main {
@@ -736,5 +755,57 @@ a {
 
   .card {
     justify-content: space-between;
+  }
+
+  .benefit-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 750px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .benefit-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: var(--fifth-color);
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .shoe-image {
+    object-fit: cover;
+    height: 350px;
+  }
+
+  .benefit-card .card-info {
+    display: flex;
+    background-color: rgba(40, 40, 40, 0.75);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    color: var(--fourth-color);
+  }
+
+  .card-info .dollar-sign {
+    padding: 10px;
+    border: 1px solid #666;
+    background-color: #777;
+    border-radius: 10px;
+    color: var(--fourth-color);
+    width: 48px;
+  }
+
+  .card-info p {
+    font-size: 12px;
+  }
+
+  .benefit-description h2 {
+    margin-bottom: 15px;
   }
 }
