@@ -507,9 +507,15 @@ a {
   margin-bottom: 35px;
 }
 
+.benefit-card {
+  display: none;
+}
+
 .benefit-description {
   padding: 20px;
   line-height: 30px;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 720px) {
@@ -570,6 +576,10 @@ a {
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .benefit-description {
+    max-width: 550px;
   }
 }
 
