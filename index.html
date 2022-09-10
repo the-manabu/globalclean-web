@@ -173,20 +173,40 @@
           </div>
         </div>
       </div>
+
+      <!-- Benefit Section -->
+      <div class="benefit-section">
+        <div class="benefit-card">
+          <img
+            src="/assets/images/shoe-image.jpg"
+            alt="shoe image"
+            class="shoe-image"
+          />
+          <div class="card-info">
+            <img
+              src="/assets/icons/dollar-symbol.svg"
+              alt="dollar icon"
+              class="dollar-sign"
+            />
+            <p>Only spend $2 and your shoes will look like new!</p>
+          </div>
+        </div>
+        <div class="benefit-description">
+          <h2>Benefits Of Using GlobalClean Services</h2>
+          <p>
+            There are so many benefit when you using our services. Some of those
+            benefit are:
+          </p>
+          <ul>
+            <li>Pick-up service.</li>
+            <li>Expert service.</li>
+            <li>Save your time.</li>
+            <li>100% service guarantee.</li>
+          </ul>
+        </div>
+      </div>
     </main>
 
-    <script>
-      const menuButton = document.querySelector(".mobile-navbar");
-      const menuIcon = document.querySelectorAll(".menu-icon");
-      const menuContainer = document.querySelector(".mobile-menu");
-
-      menuButton.addEventListener("click", () => {
-        menuIcon[0].classList.toggle("active");
-        menuIcon[1].classList.toggle("active");
-        menuIcon[2].classList.toggle("active");
-
-        menuContainer.classList.toggle("active");
-      });
-    </script>
+    <script src="/assets/scripts/index.js"></script>
   </body>
 </html>
