@@ -9,7 +9,7 @@ Live URLs:
 
 ## Contributors
 
-- Eric
+- Eric Pradana - [GitHub](https://github.com/ericprd) | [LinkedIn](https://www.linkedin.com/in/eric-pradana-4887a91a4/)
 - Hisyam
 
 ## Designs

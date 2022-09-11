@@ -334,8 +334,8 @@ a {
 .mobile-navbar .menu-icon {
   width: 2rem;
   height: 3px;
-  background-color: #000;
   margin: 5px 0;
+  background-color: var(--fourth-color);
   transition: all 0.3s ease-in-out;
   border-radius: 40px;
 }
@@ -578,13 +578,17 @@ a {
   gap: 30px;
 }
 
-.logo {
+.brand-logo {
   max-width: 150px;
   max-height: 150px;
   filter: contrast(1%);
 }
 
-.review-container{
+.review-section {
+  padding: 0 20px;
+}
+
+.review-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -592,6 +596,47 @@ a {
   align-items: center;
 }
 
+.review-container img {
+  max-width: 300px;
+}
+
+.sign-up-section {
+  max-width: 350px;
+  background-color: var(--second-color);
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+
+  /* will remove later */
+  margin-bottom: 80vh;
+}
+
+.sign-up-section p {
+  font-size: 24px;
+  color: var(--third-color);
+  margin-bottom: 50px;
+}
+
+.sign-up-section a {
+  background-color: var(--third-color);
+  color: var(--second-color);
+  padding: 9px 20px;
+  border-radius: 10px;
+}
+
+.navbar .right-navbar:hover,
+.search-button:hover,
+.read-more-button:hover {
+  background-color: var(--fourth-color);
+  border: 1px solid var(--second-color);
+  color: var(--second-color);
+}
+
+.navbar .right-navbar:hover a {
+  color: var(--second-color);
+}
 @media screen and (min-width: 720px) {
   main {
     margin-top: 0;
@@ -622,21 +667,18 @@ a {
     display: none;
   }
 
-  .right-navbar {
-    background-color: var(--second-color);
-    border-radius: 15px;
-  }
-
   .right-navbar a {
     color: var(--fourth-color);
   }
 
   .navbar .right-navbar {
     display: flex;
+    background-color: var(--second-color);
+    border-radius: 15px;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
-    padding: 5px 3px;
+    font-size: .9rem;
+    padding: 10px 4px;
     border: 1px solid var(--second-color);
     min-width: 150px;
   }
@@ -658,9 +700,12 @@ a {
   .steps {
     flex-direction: row;
   }
-}
 
-/* Footer */
+  .sign-up-section {
+    max-width: 600px;
+    padding: 50px;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .navbar {
@@ -813,48 +858,7 @@ a {
   }
 
   .sign-up-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 200px;
-}
-
-.sign-up-background {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 50px;
-  gap: 40px;
-  width: 1000px;
-  border-radius: 16px;
-
-  background-color: #3ca19d;
-}
-
-.sign-up-section h2 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 50px;
-  color: var(--fourth-color);
-}
-
-.sign-up-section .primary-button {
-  display: flex;
-  padding: 16px 32px;
-  width: fit-content;
-  height: fit-content;
-  background-color: #fff;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 16px;
-  color: var(--second-color);
-  border-radius: 8px;
-}
+    max-width: 750px;
+    padding: 50px 80px;
+  }
 }
