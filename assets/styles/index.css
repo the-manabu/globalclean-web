@@ -278,7 +278,7 @@ Add the correct display in Chrome and Safari.
   --default-font: "Poppins", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -470,7 +470,7 @@ a {
 
 .cards {
   max-width: 900px;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -510,6 +510,11 @@ a {
   margin-bottom: 35px;
 }
 
+.benefit-section {
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
 .benefit-card {
   display: none;
 }
@@ -519,6 +524,44 @@ a {
   line-height: 30px;
   max-width: 350px;
   margin: 0 auto;
+}
+
+.how-section {
+  padding: 0 20px;
+}
+
+.how-section .heading-section p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.step-card {
+  max-width: 250px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.step-card .step-icon {
+  background-color: var(--second-color);
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.step-card .step-description h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 720px) {
@@ -583,85 +626,10 @@ a {
   .benefit-description {
     max-width: 550px;
   }
-}
 
-/* How We Are Works Sections */
-.how-section {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 20vh;
-  background-color: #fafafa;
-  gap: 65px;
-}
-
-.how-section .heading-section {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  text-align: center;
-}
-
-.how-section .heading-section h2 {
-  margin: 0px;
-}
-
-.how-section .heading-section p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.steps {
-  display: flex;
-  gap: 40px;
-}
-
-.steps .step-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-}
-
-.steps .step-card .step-icon {
-  background-color: var(--second-color);
-  padding: 13px;
-  border-radius: 999px;
-  width: fit-content;
-  height: fit-content;
-}
-
-.steps .step-card .step-icon img {
-  height: 54px;
-}
-
-.steps .step-card .step-description {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  text-align: center;
-}
-
-.steps .step-card .step-description h6 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: var(--first-color);
-}
-
-.steps .step-card .step-description p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-
-  color: rgba(51, 51, 51, 0.7);
+  .steps {
+    flex-direction: row;
+  }
 }
 
 .logo-section {
@@ -875,5 +843,10 @@ a {
 
   .benefit-description h2 {
     margin-bottom: 15px;
+  }
+
+  .steps {
+    max-width: 900px;
+    margin: 0 auto;
   }
 }
