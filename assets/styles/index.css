@@ -669,12 +669,12 @@ footer {
   margin-bottom: 5px;
 }
 
-.footer-sosial i{
+.footer-sosial i {
   font-size: 24px;
   margin-right: 10px;
 }
 
-.footer-bottom{
+.footer-bottom {
   padding: 10px;
   text-align: center;
 }
@@ -754,6 +754,10 @@ footer {
 
   .sign-up-section a {
     padding: 15px 20px;
+  }
+
+  .footer-top .footer-description {
+    max-width: 500px;
   }
 }
 
@@ -910,5 +914,20 @@ footer {
   .sign-up-section {
     max-width: 750px;
     padding: 50px 80px;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .footer-top ul {
+    margin-left: -40px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
   }
 }
