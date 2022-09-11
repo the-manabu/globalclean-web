@@ -556,12 +556,31 @@ a {
   border-radius: 50%;
   padding: 10px;
   margin-bottom: 20px;
+  height: 64px;
+  width: 64px;
 }
 
 .step-card .step-description h3 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.logo-section{
+  margin-top: 150px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo{
+  max-width: 150px;
+  max-height: 150px;
+  filter: contrast(1%);
+
 }
 
 @media screen and (min-width: 720px) {
@@ -632,7 +651,7 @@ a {
   }
 }
 
-.logo-section {
+/* .logo-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -650,7 +669,7 @@ a {
   mix-blend-mode: luminosity;
   opacity: 0.2;
   filter: grayscale(100%);
-}
+} */
 
 .sign-up-section {
   display: flex;
