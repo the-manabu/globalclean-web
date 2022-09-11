@@ -278,7 +278,7 @@ Add the correct display in Chrome and Safari.
   --default-font: "Poppins", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -470,7 +470,7 @@ a {
 
 .cards {
   max-width: 900px;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -510,6 +510,11 @@ a {
   margin-bottom: 35px;
 }
 
+.benefit-section {
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
 .benefit-card {
   display: none;
 }
@@ -519,6 +524,72 @@ a {
   line-height: 30px;
   max-width: 350px;
   margin: 0 auto;
+}
+
+.how-section {
+  padding: 0 20px;
+  margin-top: 150px;
+}
+
+.how-section .heading-section p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.step-card {
+  max-width: 250px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.step-card .step-icon {
+  background-color: var(--second-color);
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 64px;
+  width: 64px;
+}
+
+.step-card .step-description h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.logo-section,
+.review-section {
+  margin-top: 150px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  max-width: 150px;
+  max-height: 150px;
+  filter: contrast(1%);
+}
+
+.review-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 720px) {
@@ -581,153 +652,12 @@ a {
   }
 
   .benefit-description {
-    max-width: 550px;
+    min-width: 550px;
   }
-}
 
-/* How We Are Works Sections */
-.how-section {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 20vh;
-  background-color: #fafafa;
-  gap: 65px;
-}
-
-.how-section .heading-section {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  text-align: center;
-}
-
-.how-section .heading-section h2 {
-  margin: 0px;
-}
-
-.how-section .heading-section p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.steps {
-  display: flex;
-  gap: 40px;
-}
-
-.steps .step-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-}
-
-.steps .step-card .step-icon {
-  background-color: var(--second-color);
-  padding: 13px;
-  border-radius: 999px;
-  width: fit-content;
-  height: fit-content;
-}
-
-.steps .step-card .step-icon img {
-  height: 54px;
-}
-
-.steps .step-card .step-description {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  text-align: center;
-}
-
-.steps .step-card .step-description h6 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: var(--first-color);
-}
-
-.steps .step-card .step-description p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-
-  color: rgba(51, 51, 51, 0.7);
-}
-
-.logo-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-items: center;
-  margin-top: 100px;
-  gap: 100px;
-}
-
-.logo-section .logo-container {
-  display: flex;
-  height: 100px;
-}
-
-.logo-section .logo-container img {
-  mix-blend-mode: luminosity;
-  opacity: 0.2;
-  filter: grayscale(100%);
-}
-
-.sign-up-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 200px;
-}
-
-.sign-up-background {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 50px;
-  gap: 40px;
-  width: 1000px;
-  border-radius: 16px;
-
-  background-color: #3ca19d;
-}
-
-.sign-up-section h2 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 50px;
-  color: var(--fourth-color);
-}
-
-.sign-up-section .primary-button {
-  display: flex;
-  padding: 16px 32px;
-  width: fit-content;
-  height: fit-content;
-  background-color: #fff;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 16px;
-  color: var(--second-color);
-  border-radius: 8px;
+  .steps {
+    flex-direction: row;
+  }
 }
 
 /* Footer */
@@ -837,7 +767,7 @@ a {
   .benefit-card {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    min-width: 300px;
     background-color: var(--fifth-color);
     overflow: hidden;
     border-radius: 14px;
@@ -876,4 +806,55 @@ a {
   .benefit-description h2 {
     margin-bottom: 15px;
   }
+
+  .steps {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .sign-up-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 200px;
+}
+
+.sign-up-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 50px;
+  gap: 40px;
+  width: 1000px;
+  border-radius: 16px;
+
+  background-color: #3ca19d;
+}
+
+.sign-up-section h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--fourth-color);
+}
+
+.sign-up-section .primary-button {
+  display: flex;
+  padding: 16px 32px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--second-color);
+  border-radius: 8px;
+}
 }
