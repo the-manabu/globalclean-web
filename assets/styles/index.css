@@ -626,6 +626,17 @@ a {
   border-radius: 10px;
 }
 
+.navbar .right-navbar:hover,
+.search-button:hover,
+.read-more-button:hover {
+  background-color: var(--fourth-color);
+  border: 1px solid var(--second-color);
+  color: var(--second-color);
+}
+
+.navbar .right-navbar:hover a {
+  color: var(--second-color);
+}
 @media screen and (min-width: 720px) {
   main {
     margin-top: 0;
@@ -656,21 +667,18 @@ a {
     display: none;
   }
 
-  .right-navbar {
-    background-color: var(--second-color);
-    border-radius: 15px;
-  }
-
   .right-navbar a {
     color: var(--fourth-color);
   }
 
   .navbar .right-navbar {
     display: flex;
+    background-color: var(--second-color);
+    border-radius: 15px;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
-    padding: 5px 3px;
+    font-size: .9rem;
+    padding: 10px 4px;
     border: 1px solid var(--second-color);
     min-width: 150px;
   }
