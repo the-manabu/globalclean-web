@@ -334,8 +334,8 @@ a {
 .mobile-navbar .menu-icon {
   width: 2rem;
   height: 3px;
-  background-color: #000;
   margin: 5px 0;
+  background-color: var(--fourth-color);
   transition: all 0.3s ease-in-out;
   border-radius: 40px;
 }
@@ -578,7 +578,7 @@ a {
   gap: 30px;
 }
 
-.logo {
+.brand-logo {
   max-width: 150px;
   max-height: 150px;
   filter: contrast(1%);
