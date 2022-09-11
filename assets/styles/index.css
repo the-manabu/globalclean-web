@@ -528,6 +528,7 @@ a {
 
 .how-section {
   padding: 0 20px;
+  margin-top: 150px;
 }
 
 .how-section .heading-section p {
@@ -566,7 +567,8 @@ a {
   margin-bottom: 10px;
 }
 
-.logo-section{
+.logo-section,
+.review-section {
   margin-top: 150px;
   max-width: 100%;
   display: flex;
@@ -576,11 +578,18 @@ a {
   gap: 30px;
 }
 
-.logo{
+.logo {
   max-width: 150px;
   max-height: 150px;
   filter: contrast(1%);
+}
 
+.review-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 720px) {
@@ -643,78 +652,12 @@ a {
   }
 
   .benefit-description {
-    max-width: 550px;
+    min-width: 550px;
   }
 
   .steps {
     flex-direction: row;
   }
-}
-
-/* .logo-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-items: center;
-  margin-top: 100px;
-  gap: 100px;
-}
-
-.logo-section .logo-container {
-  display: flex;
-  height: 100px;
-}
-
-.logo-section .logo-container img {
-  mix-blend-mode: luminosity;
-  opacity: 0.2;
-  filter: grayscale(100%);
-} */
-
-.sign-up-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 200px;
-}
-
-.sign-up-background {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 50px;
-  gap: 40px;
-  width: 1000px;
-  border-radius: 16px;
-
-  background-color: #3ca19d;
-}
-
-.sign-up-section h2 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 50px;
-  color: var(--fourth-color);
-}
-
-.sign-up-section .primary-button {
-  display: flex;
-  padding: 16px 32px;
-  width: fit-content;
-  height: fit-content;
-  background-color: #fff;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 16px;
-  color: var(--second-color);
-  border-radius: 8px;
 }
 
 /* Footer */
@@ -824,7 +767,7 @@ a {
   .benefit-card {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    min-width: 300px;
     background-color: var(--fifth-color);
     overflow: hidden;
     border-radius: 14px;
@@ -868,4 +811,50 @@ a {
     max-width: 900px;
     margin: 0 auto;
   }
+
+  .sign-up-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 200px;
+}
+
+.sign-up-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 50px;
+  gap: 40px;
+  width: 1000px;
+  border-radius: 16px;
+
+  background-color: #3ca19d;
+}
+
+.sign-up-section h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--fourth-color);
+}
+
+.sign-up-section .primary-button {
+  display: flex;
+  padding: 16px 32px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--second-color);
+  border-radius: 8px;
+}
 }
